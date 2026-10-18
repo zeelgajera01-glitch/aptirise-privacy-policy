@@ -1,62 +1,310 @@
-Privacy Policy
 
-AptiRise Privacy Policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AptiRise Privacy Policy explaining how account information and learning data are collected, used, stored, and protected.">
+  <meta name="robots" content="index, follow">
+  <title>AptiRise Privacy Policy</title>
 
-Effective Date: October 18, 2026 | Package: com.aptirise.app
+  <style>
+    :root {
+      --primary: #f47b20;
+      --text: #222222;
+      --muted: #5f6368;
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --border: #e5e7eb;
+    }
 
-1. Introduction
+    * {
+      box-sizing: border-box;
+    }
 
-Welcome to AptiRise. We respect your personal privacy and are committed to protecting the data you share with us. This Privacy Policy explains how AptiRise collects, uses, stores, and discloses information when you use our Android mobile application and associated services.
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.75;
+    }
 
-By installing or using AptiRise, you agree to the collection and use of information in accordance with this policy.
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 20px;
+    }
 
-2. Information We Collect
+    .header-inner {
+      max-width: 900px;
+      margin: auto;
+    }
 
-A. Account & Profile Information
+    .brand {
+      color: var(--primary);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
 
-When you register for an account or sign in using Firebase Authentication, we collect:
-• Email Address: Used for account registration, sign-in authentication, email verification, and password recovery.
-• Display Name: Used to personalize your profile and progress reports within the app.
-• Daily Learning Target: Stored in Cloud Firestore to customize your daily question recommendations.
+    main {
+      max-width: 900px;
+      margin: 36px auto;
+      padding: 0 20px;
+    }
 
-B. Local Practice & Test Progress
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px 42px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.035);
+    }
 
-AptiRise stores learning data on your device using Android Room Database and DataStore Preferences, including:
-• Practice session attempts, correct/incorrect responses, and timestamps.
-• Mock test scores and question completion history.
-• Saved question bookmarks and custom app appearance/theme settings.
+    h1 {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0 0 12px;
+    }
 
-C. Learning Data on This Device
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
 
-Practice attempts, mock test results, and question bookmarks are stored locally on this device. They are not uploaded or restored across devices.
+    h3 {
+      font-size: 1.05rem;
+      margin-top: 22px;
+      margin-bottom: 8px;
+    }
 
-D. Account Security
+    p {
+      margin: 10px 0 16px;
+    }
 
-Firebase Authentication handles account sign-in. Your account profile is stored separately from learning records, which stay on this device.
+    .effective-date {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-bottom: 28px;
+    }
 
-3. How We Use Your Information
+    ul {
+      padding-left: 24px;
+    }
 
-Account information is used for sign-in, profile management, and account security. Local learning data powers practice sessions, mock test results, bookmarks, and progress statistics.
+    li {
+      margin-bottom: 8px;
+    }
 
-4. Third-Party Services
+    a {
+      color: #b9560b;
+      overflow-wrap: anywhere;
+    }
 
-AptiRise uses Firebase Authentication for sign-in, Cloud Firestore for account profiles, and Cloud Functions for account management and free-hint requests. Practice history and bookmarks remain on this device.
+    .contact {
+      background: #fff7f0;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin-top: 16px;
+    }
 
-5. Account & Data Deletion Rights
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 24px 16px 36px;
+      font-size: 0.9rem;
+    }
 
-You can delete your account from Profile or the navigation drawer. Account deletion removes your account profile and associated server records. Learning records stored on this device are not backed up to the cloud. For support, contact zeelgajera010@gmail.com.
+    @media (max-width: 600px) {
+      main {
+        margin: 18px auto;
+        padding: 0 12px;
+      }
 
-6. Data Security
+      article {
+        padding: 24px 20px;
+      }
 
-We implement industry-standard security measures to safeguard your information:
-• All data in transit between AptiRise and Firebase services is encrypted using HTTPS / TLS encryption.
-• Cloud Firestore security rules strictly enforce user data isolation.
+      h1 {
+        font-size: 1.65rem;
+      }
 
-7. Children's Privacy
+      h2 {
+        font-size: 1.15rem;
+      }
 
-AptiRise does not knowingly collect personal identifiable information from children under 13. If you believe a child has provided us with personal data, please contact us so we can immediately delete the information.
+      header {
+        padding: 22px 16px;
+      }
+    }
+  </style>
+</head>
 
-8. Contact Us
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">AptiRise</div>
+    </div>
+  </header>
 
-If you have any questions or suggestions regarding this Privacy Policy, please contact us at:
-Email: zeelgajera010@gmail.com
+  <main>
+    <article>
+      <h1>Privacy Policy</h1>
+      <p><strong>AptiRise Privacy Policy</strong></p>
+
+      <p class="effective-date">
+        Effective Date: October 18, 2026 |
+        Package: com.aptirise.app
+      </p>
+
+      <section>
+        <h2>1. Introduction</h2>
+        <p>
+          Welcome to AptiRise. We respect your personal privacy and are
+          committed to protecting the data you share with us. This Privacy
+          Policy explains how AptiRise collects, uses, stores, and discloses
+          information when you use our Android mobile application and
+          associated services.
+        </p>
+        <p>
+          By installing or using AptiRise, you acknowledge the collection
+          and use of information as described in this policy.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information We Collect</h2>
+
+        <h3>A. Account &amp; Profile Information</h3>
+        <p>
+          When you register for an account or sign in using Firebase
+          Authentication, we collect:
+        </p>
+        <ul>
+          <li>
+            <strong>Email Address:</strong> Used for account registration,
+            sign-in authentication, email verification, and password recovery.
+          </li>
+          <li>
+            <strong>Display Name:</strong> Used to personalize your profile
+            and progress reports within the app.
+          </li>
+          <li>
+            <strong>Daily Learning Target:</strong> Stored in Cloud Firestore
+            to customize your daily question recommendations.
+          </li>
+        </ul>
+
+        <h3>B. Local Practice &amp; Test Progress</h3>
+        <p>
+          AptiRise stores learning data on your device using Android Room
+          Database and DataStore Preferences, including:
+        </p>
+        <ul>
+          <li>Practice session attempts, correct and incorrect responses, and timestamps.</li>
+          <li>Mock test scores and question completion history.</li>
+          <li>Saved question bookmarks and custom app appearance and theme settings.</li>
+        </ul>
+
+        <h3>C. Learning Data on This Device</h3>
+        <p>
+          Practice attempts, mock test results, and question bookmarks are
+          stored locally on this device. They are not uploaded or restored
+          across devices.
+        </p>
+
+        <h3>D. Account Security</h3>
+        <p>
+          Firebase Authentication handles account sign-in. Your account
+          profile is stored separately from learning records, which stay
+          on this device.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. How We Use Your Information</h2>
+        <p>
+          Account information is used for sign-in, profile management, and
+          account security. Local learning data powers practice sessions,
+          mock test results, bookmarks, and progress statistics.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Third-Party Services</h2>
+        <p>
+          AptiRise uses Firebase Authentication for sign-in, Cloud Firestore
+          for account profiles, and Cloud Functions for account management
+          and free-hint requests. Practice history and bookmarks remain on
+          this device.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Account &amp; Data Deletion Rights</h2>
+        <p>
+          You can delete your account from Profile or the navigation drawer.
+          Account deletion removes your account profile and associated server
+          records. Learning records stored on this device are not backed up
+          to the cloud.
+        </p>
+        <p>
+          For support with account or data deletion, contact us using the
+          email address below.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Data Security</h2>
+        <p>
+          We take reasonable measures to safeguard your information,
+          including:
+        </p>
+        <ul>
+          <li>
+            Data transmitted between AptiRise and Firebase services is
+            encrypted using HTTPS/TLS.
+          </li>
+          <li>
+            Cloud Firestore security rules are used to enforce user data
+            isolation.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Children's Privacy</h2>
+        <p>
+          AptiRise does not knowingly collect personally identifiable
+          information from children under 13. If you believe a child has
+          provided us with personal data, please contact us so we can
+          investigate and take appropriate action.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Contact Us</h2>
+        <p>
+          If you have questions or suggestions regarding this Privacy
+          Policy, or need assistance with account deletion, please contact us:
+        </p>
+
+        <div class="contact">
+          <strong>Email:</strong>
+          <a href="mailto:zeelgajera010@gmail.com">
+            zeelgajera010@gmail.com
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2026 AptiRise. All rights reserved.
+  </footer>
+</body>
+</html>
